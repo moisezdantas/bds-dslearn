@@ -18,3 +18,8 @@ INSERT INTO tb_course (name, img_uri, img_Gray_Uri) VALUES ('Bootcamp', 'https:/
 
 INSERT INTO TB_OFFER(edition, start_moment, end_moment, course_id) values ('1.0', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z' , TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
 INSERT INTO TB_OFFER(edition, start_moment, end_moment, course_id) values ('2.0', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z' , TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+
+
+INSERT INTO TB_resource(title, description, position, img_uri, type, offer_id) values ('Trilha html', 'trilha principal', 1, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7&size=770:433', 1, 1);
+INSERT INTO TB_resource(title, description, position, img_uri, type, offer_id) values ('Forum ', 'Tire suas dúvidas', 2, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7&size=770:433', 2, 1);
+INSERT INTO TB_resource(title, description, position, img_uri, type, offer_id) values ('Lives', 'Lives ecluvisas para a turma', 3, 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7&size=770:433', 0, 1);

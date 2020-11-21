@@ -15,3 +15,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
 
 INSERT INTO tb_course (name, img_uri, img_Gray_Uri) VALUES ('Bootcamp', 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/online-3412473_1920_1.jpeg?tz.RfsTe_UTLHiDqxmpG7PY_nTIBjwF7&size=770:433', 'https://cdn.pixabay.com/photo/2018/03/22/10/55/training-course-3250007_1280.jpg');
+
+INSERT INTO TB_OFFER(edition, start_moment, end_moment, course_id) values ('1.0', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z' , TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO TB_OFFER(edition, start_moment, end_moment, course_id) values ('2.0', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z' , TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);

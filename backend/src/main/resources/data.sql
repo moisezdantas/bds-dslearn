@@ -29,3 +29,24 @@ INSERT INTO tb_section(title, description, position, img_uri, resource_id, prere
 
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (1, 1, TIMESTAMP WITH TIME ZONE '2020-11-14T13:00:00Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (2, 1, TIMESTAMP WITH TIME ZONE '2020-11-14T13:00:00Z', null, true, false);
+
+INSERT INTO tb_lesson(title, position, section_id) values ('Aula 1',1 ,1);
+INSERT INTO tb_content(id, text_Content, video_Uri) values (1,'Material de apoio','link do video');
+
+INSERT INTO tb_lesson(title, position, section_id) values ('Aula 2',2 ,1);
+INSERT INTO tb_content(id, text_Content, video_Uri) values (2,'','link do video');
+
+INSERT INTO tb_lesson(title, position, section_id) values ('Aula 3',3 ,1);
+INSERT INTO tb_content(id, text_Content, video_Uri) values (3,'','link do video');
+
+INSERT INTO tb_lesson(title, position, section_id) values ('Taref do capitulo 1',4 ,1);
+
+insert into task(id, description,question_count,approval_count,weight, due_date) values(4, 'Fazer trabalho legal', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2020-11-14T13:00:00Z')
+
+insert into tb_lessons_done(lesson_id, user_id, offer_id) values (1,1,1);
+insert into tb_lessons_done(lesson_id, user_id, offer_id) values (2,1,1);
+
+
+
+
+

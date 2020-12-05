@@ -1,7 +1,9 @@
 package com.devsuperior.dslearnbds.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -13,6 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
 @Table(name = "tb_user")
@@ -34,6 +37,10 @@ public class User implements Serializable {
 	
 	public User () {}
 
+	@OneToMany(mappedBy = "user")
+	private List<Notification> notifications = new ArrayList<>();
+	
+	
 	public User(Long id, String name, String email, String password, Set<Role> roles) {
 		super();
 		this.id = id;

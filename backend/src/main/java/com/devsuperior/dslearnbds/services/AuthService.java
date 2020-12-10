@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.service;
+package com.devsuperior.dslearnbds.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -7,8 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dslearnbds.entities.User;
 import com.devsuperior.dslearnbds.repositories.UserRepository;
-import com.devsuperior.dslearnbds.service.exceptions.ForbiddenException;
-import com.devsuperior.dslearnbds.service.exceptions.UnauthorizedException;
+import com.devsuperior.dslearnbds.services.exceptions.ForbiddenException;
+import com.devsuperior.dslearnbds.services.exceptions.UnauthorizedException;
 
 @Service
 public class AuthService {

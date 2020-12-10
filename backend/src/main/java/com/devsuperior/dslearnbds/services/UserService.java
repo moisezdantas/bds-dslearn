@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.service;
+package com.devsuperior.dslearnbds.services;
 
 import java.util.Optional;
 
@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.devsuperior.dslearnbds.dto.UserDTO;
 import com.devsuperior.dslearnbds.entities.User;
 import com.devsuperior.dslearnbds.repositories.UserRepository;
-import com.devsuperior.dslearnbds.service.exceptions.ResourceNotFoundException;
+import com.devsuperior.dslearnbds.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class UserService implements UserDetailsService {

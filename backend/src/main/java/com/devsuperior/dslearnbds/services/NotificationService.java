@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.service;
+package com.devsuperior.dslearnbds.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
